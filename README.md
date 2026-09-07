@@ -1,57 +1,19 @@
-# SANI CHESS v3
+# SANI CHESS v3.9.8
 
-Современная веб-игра в шахматы SANI GROUP.
+Premium SANI CHESS with persistent player profiles, VIP/shop, admin panel, computer play and online tables.
 
-## Возможности
-- Игра против компьютера.
-- Два игрока на одном устройстве.
-- Онлайн 1×1.
-- Серверная проверка онлайн-ходов.
-- Полные шахматные правила.
-- Фишки и магазин.
-- 5 досок и 5 наборов фигур.
-- Постоянные аккаунты и сохранение в `db.json`.
-- VIP и бан.
-- Админ-панель.
-- Адаптивный интерфейс для ПК и телефона.
+## Deploy
+- Node.js 18+
+- `npm install`
+- Set `ADMIN_PASSWORD` in the hosting provider environment.
+- Start with `npm start`.
 
-## Запуск
+## Online rules
+- Leaving the table intentionally is an immediate loss and the opponent receives the room bank.
+- A network disconnect gives the player 60 seconds to reconnect.
+- Returning within the grace period keeps the game alive.
+- If the player does not return within 60 seconds, the opponent wins the bank.
+- Draw offers are server-side and require opponent acceptance.
 
-Требуется Node.js 18+.
-
-```bash
-npm start
-```
-
-Откройте `http://localhost:3000`.
-
-## Админ
-Пароль берётся только из переменной окружения `ADMIN_PASSWORD`. Если переменная не задана, админ-панель отключена. Пароль больше не передаётся в URL и не хранится в браузере.
-
-## Хранилище
-`db.json` содержит аккаунты игроков, их фишки, инвентарь, выбранные предметы, VIP и бан.
-
-## v3.9 VIP
-- VIP-only Grandmaster Hint
-- VIP jewelry board and pieces, not purchasable
-- VIP status refreshes without re-login
-- New accounts start with 100,000 chips
-
-## Исправления безопасности и онлайн-логики
-- Серверные HttpOnly-сессии вместо доверия к `accountId` из клиента.
-- Никнейм изменяется отдельным серверным endpoint и проверяется на уникальность.
-- Админка использует отдельную HttpOnly-сессию.
-- Онлайн-комнаты хранят историю позиций и revision для корректного повторения позиций.
-- Возврат ставок при ничьей использует `accountId`, а не временный room uid.
-- Результат игры против AI вычисляется сервером; клиент не может отправить `win/loss/draw`.
-- Ходы AI выполняются и валидируются на сервере.
-- Добавлено восстановление игрока онлайн-комнаты после перезагрузки страницы.
-- Добавлен rate limit для игрового чата.
-- Коды онлайн-столов — 4 цифры с проверкой коллизий.
-
-## Обновление v3.9.3
-- Никнейм можно менять в профиле в любое время.
-- Смена никнейма не создаёт новый аккаунт: ID, фишки, VIP, покупки и настройки сохраняются.
-- Если игрок уже находится в онлайн-столе, новое имя сразу применяется к игроку за столом.
-- Добавлена кнопка музыки в верхней панели.
-- В комплект добавлен оригинальный спокойный фон `bg-music.mp3`.
+## Music
+Place `bg-music.mp3` beside `index.html` (or in the public root used by the deployment). Use the music button in the top bar to toggle playback.

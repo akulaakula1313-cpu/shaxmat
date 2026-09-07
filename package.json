@@ -1,6 +1,6 @@
 {
   "name": "sani-chess-online",
-  "version": "3.9.1",
+  "version": "3.9.8",
   "private": true,
   "type": "commonjs",
   "scripts": {
