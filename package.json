@@ -1,11 +1,8 @@
 {
-  "name": "sani-chess-online",
-  "version": "1.0.0",
-  "private": true,
-  "type": "commonjs",
-  "scripts": {
-    "start": "node server.js",
-    "test": "node test_engine.js"
-  },
-  "engines": { "node": ">=18" }
+  "name":"sani-chess",
+  "version":"3.4.0",
+  "private":true,
+  "description":"SANI CHESS — online chess with bots, chips, shop, rankings and responsive UI",
+  "scripts":{"start":"node server.js","test":"node test_engine.js"},
+  "engines":{"node":">=18"}
 }
