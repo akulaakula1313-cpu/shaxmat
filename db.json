@@ -56,6 +56,44 @@
       "banned": false,
       "createdAt": 1788805725443,
       "updatedAt": 1788805725443
+    },
+    "31b0921a76f238625568e7adcde97b06": {
+      "id": "31b0921a76f238625568e7adcde97b06",
+      "name": "TestWhite",
+      "chips": 100000,
+      "inventory": {
+        "boards": [
+          "classic"
+        ],
+        "pieces": [
+          "classic"
+        ],
+        "selectedBoard": "classic",
+        "selectedPieces": "classic"
+      },
+      "vip": false,
+      "banned": false,
+      "createdAt": 1788809001762,
+      "updatedAt": 1788809003636
+    },
+    "f65c58f8ef406c77bffd926db5ec9cd0": {
+      "id": "f65c58f8ef406c77bffd926db5ec9cd0",
+      "name": "TestBlack",
+      "chips": 100000,
+      "inventory": {
+        "boards": [
+          "classic"
+        ],
+        "pieces": [
+          "classic"
+        ],
+        "selectedBoard": "classic",
+        "selectedPieces": "classic"
+      },
+      "vip": false,
+      "banned": false,
+      "createdAt": 1788809001773,
+      "updatedAt": 1788809005281
     }
   },
   "leaderboard": []
