@@ -1,1 +1,43 @@
-{"users":{},"leaderboard":[]}
+{
+  "users": {
+    "a58679bb4f2fed41fab3fc2b8ac9cde0": {
+      "id": "a58679bb4f2fed41fab3fc2b8ac9cde0",
+      "name": "AdminA",
+      "chips": 100000,
+      "inventory": {
+        "boards": [
+          "classic"
+        ],
+        "pieces": [
+          "classic"
+        ],
+        "selectedBoard": "classic",
+        "selectedPieces": "classic"
+      },
+      "vip": false,
+      "banned": false,
+      "createdAt": 1788805712375,
+      "updatedAt": 1788805712375
+    },
+    "11701ea71251589ed4c25d3906db9e72": {
+      "id": "11701ea71251589ed4c25d3906db9e72",
+      "name": "AdminB",
+      "chips": 100000,
+      "inventory": {
+        "boards": [
+          "classic"
+        ],
+        "pieces": [
+          "classic"
+        ],
+        "selectedBoard": "classic",
+        "selectedPieces": "classic"
+      },
+      "vip": false,
+      "banned": false,
+      "createdAt": 1788805712385,
+      "updatedAt": 1788805712385
+    }
+  },
+  "leaderboard": []
+}
