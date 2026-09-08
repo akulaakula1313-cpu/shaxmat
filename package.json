@@ -1,0 +1,13 @@
+{
+  "name": "sani-chess-online",
+  "version": "4.2.0",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node test_engine.js && node test_integration.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
